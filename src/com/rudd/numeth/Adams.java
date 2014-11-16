@@ -125,9 +125,9 @@ public class Adams {
     }
 
     public void printResult() {
-        System.out.format("%3s %9s %9s %9s\n","Xn", "Yn(Comp)", "Yn(Exact)", "Ea(%)");
+        System.out.format("%3s %9s %9s %9s %9s\n","Xn", "Py", "Yn(Comp)", "Yn(Exact)", "Ea(%)");
         for(int i=0; i<=this.n; ++i){
-            System.out.format("%3.1f %8.7f %8.7f %8.7f", x.get(i), y.get(i), ey.get(i), ea.get(i));
+            System.out.format("%3.1f %8.7f %8.7f %8.7f %8.7f", x.get(i), py.get(i), y.get(i), ey.get(i), ea.get(i));
             System.out.println();
         }
     }
